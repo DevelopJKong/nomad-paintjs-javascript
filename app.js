@@ -104,11 +104,10 @@ function onDoubleClick(event) {
 function onSaveClick() {
   const url = canvas.toDataURL();
   const a = document.createElement("a");
-  a.href= url;
+  a.href = url;
   a.download = "myDrawing.png";
   a.click();
 }
-
 
 canvas.addEventListener("dblclick", onDoubleClick);
 canvas.addEventListener("mousemove", onMove);
@@ -126,4 +125,14 @@ modeBtn.addEventListener("click", onModeClick);
 destroyBtn.addEventListener("click", onDestroyClick);
 eraserBtn.addEventListener("click", onEraserClick);
 fileInput.addEventListener("change", onFileChange);
-saveBtn.addEventListener("click",onSaveClick);
+saveBtn.addEventListener("click", onSaveClick);
+
+
+//? CODE CHANLENGE 
+//TODO 1. font-famliy 수정하기
+
+//TODO 2. font-size 수정하기
+
+//TODO 3. 다른 펜툴
+
+//TODO 4. 선이 채워졌을때 색이 채워지도록 만들기
